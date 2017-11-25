@@ -6,10 +6,15 @@
   let myHeader = document.getElementById("my-header");
   let userGreeting = document.getElementById("user-greeting");
 
-  function PerformGreeting(ev) {
+  function PerformGreeting() {
     myName.innerHTML = userName.value;
     ev.preventDefault();
+    return fales;
   }
+
+  if (typeof event === "undefined") {
+  getName.onsubmit = PerformGreeting; //Firefox
+  } else {
 
   getName.addEventListener("submit", PerformGreeting);
 
