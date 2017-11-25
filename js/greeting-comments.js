@@ -22,9 +22,8 @@
   let.userGreeting =document.getElementById("user-greeting");
 
   // changes the 'innerHTML' (text) of the element
-  function PerformGreeting(ev) {
-    myName.innerHTML = userName.value;
-    ev.preventDefault();
+  function PerformGreeting() {
+    myName.innerHTML = user-name.value;
   }
   /*
     Without setting the variables first, the above line would be really long:
