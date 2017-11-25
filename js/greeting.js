@@ -8,7 +8,7 @@
 
   function PerformGreeting() {
     myName.innerHTML = userName.value;
-    ev.preventDefault();
+    event.preventDefault();
     return fales;
   }
 
@@ -17,5 +17,6 @@
   } else {
 
   getName.addEventListener("submit", PerformGreeting);
+  }
 
 }());
