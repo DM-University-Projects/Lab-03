@@ -30,6 +30,13 @@
     document.getElementById("my-name").innerHTML = document.getElementById("user-name").value;
   */
 
+  event.preventDefault(); // disables default form submission
+
+  return false; // prevents further "bubbling" up of event
+
+  }
+
+
   /*
     Event Listeners keep your JavaScript out of the HTML -
     professional developers avoid (e.g.) "onclick" in HTML tags.
